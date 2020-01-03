@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:selectAllOnFocus="true"
+        android:hint="用户姓名"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name"
+        android:background="@null"
+        android:selectAllOnFocus="true"
+        android:hint="联系电话（手机号码）"
+        android:inputType="phone"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/user_address"
+        android:singleLine="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_phone"
+        android:background="@null"
+        android:selectAllOnFocus="true"
+        android:hint="安装地址（很重要必须填）"
+        android:inputType="text"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/roominfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_address"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:textSize="18dp"
+        android:text="房间信息" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roominfo"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:selectAllOnFocus="true"
+        android:hint="房间一名称"
+        android:inputType="text" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roominfo"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/roomname1"
+        android:selectAllOnFocus="true"
+        android:hint="房间二名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname1"
+        android:layout_margin="5dp"
+        android:selectAllOnFocus="true"
+        android:hint="房间三名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname1"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/roomname3"
+        android:selectAllOnFocus="true"
+        android:hint="房间四名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname3"
+        android:layout_margin="5dp"
+        android:selectAllOnFocus="true"
+        android:hint="房间五名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname3"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/roomname5"
+        android:selectAllOnFocus="true"
+        android:hint="房间六名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname5"
+        android:layout_margin="5dp"
+        android:selectAllOnFocus="true"
+        android:hint="房间七名称" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/roomname8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomname5"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/roomname7"
+        android:selectAllOnFocus="true"
+        android:hint="房间八名称" />
+
+    <Button
+        android:id="@+id/submit_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomname7"
+        android:background="#80E775"
+        android:text="保存  及  退出"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>

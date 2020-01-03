@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/userinfo"
+        android:title="用户信息"/>
+    <item
+        android:id="@+id/set_up_net"
+        android:title="配置联网信息"/>
+    <item
+        android:id="@+id/set_up_timer"
+        android:title="定时设置"/>
+    <item
+        android:id="@+id/check_version"
+        android:title="检查新版本"/>
+
+
+</menu>

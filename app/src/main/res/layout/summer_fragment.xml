@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段一"/>
+        <Button
+            android:id="@+id/starttime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段二"/>
+        <Button
+            android:id="@+id/starttime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段三"/>
+        <Button
+            android:id="@+id/starttime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段四"/>
+        <Button
+            android:id="@+id/starttime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段五"/>
+        <Button
+            android:id="@+id/starttime5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时段六"/>
+        <Button
+            android:id="@+id/starttime6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"/>
+        <Button
+            android:id="@+id/endtime6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"/>
+        <Button
+            android:id="@+id/set_temp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置温度"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">九华暖通</string>
+    <string name="button1name">状态/刷新</string>
+    <string name="button2name">文档/报修</string>
+    <string name="button3name">手动</string>
+    <string name="button4name">自动</string>
+    <string name="button5name">用户信息</string>
+    <string name="button6name">配网</string>
+    <string name="button7name">定时设置</string>
+    <string name="button8name">检查新版本</string>
+
+    <string name="textview2name">当前温度</string>
+    <string name="textview3name">当前湿度</string>
+    <string name="textview5name">开发中（敬请期待）</string>
+    <string name="textview6name">室外温度等等</string>
+    <string name="textview7name">定时设置</string>
+
+</resources>

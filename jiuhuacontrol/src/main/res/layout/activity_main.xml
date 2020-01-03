@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--底部的两个按钮-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button1name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button2name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/button1"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--中间的中分引导线-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    <!--第一行方块-->
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#DCE775"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#FFF176"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonB"
+        app:layout_constraintRight_toLeftOf="@id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#FFF176"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonB"
+        app:layout_constraintLeft_toRightOf="@id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#C4DCE775"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonB"
+        app:layout_constraintLeft_toRightOf="@id/buttonC" />
+    <!--第二行方块-->
+    <Button
+        android:id="@+id/buttonF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#FFF176"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        android:visibility="visible"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/buttonD" />
+
+    <Button
+        android:id="@+id/buttonE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#DCE775"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonF"
+        app:layout_constraintRight_toLeftOf="@id/buttonF" />
+
+    <Button
+        android:id="@+id/buttonG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#DCE775"
+        android:text="\n房间\n\n温度\n\n湿度\n\n运行状态\n"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonF"
+        app:layout_constraintLeft_toRightOf="@id/buttonF" />
+
+    <Button
+        android:id="@+id/buttonH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#A64DD0E1"
+        android:text="\n室外\n\n温度\n\n湿度\n\n其他情况\n"
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonF"
+        app:layout_constraintLeft_toRightOf="@id/buttonG" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetPeroidActivity">
+
+    <TextView
+        android:id="@+id/nameofroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="房间"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/weekradio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n一"/>
+        <RadioButton
+            android:id="@+id/tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n二"/>
+        <RadioButton
+            android:id="@+id/wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n三"/>
+        <RadioButton
+            android:id="@+id/thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n四"/>
+        <RadioButton
+            android:id="@+id/fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n五"/>
+
+        <RadioButton
+            android:id="@+id/sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n六" />
+        <RadioButton
+            android:id="@+id/sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="周\n天"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="开\n始\n时\n间"
+            />
+        <NumberPicker
+            android:id="@+id/startHourPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <NumberPicker
+            android:id="@+id/startMinutePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="结\n束\n时\n间"
+            />
+        <NumberPicker
+            android:id="@+id/endHourPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <NumberPicker
+            android:id="@+id/endMinutePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设\n置\n温\n度"
+            />
+        <NumberPicker
+            android:id="@+id/setTemperaturePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" C"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="确定"/>
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="上传服务器"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/sessionradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/period1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:background="#4FC3F7"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:background="#64B5F6"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:background="#4FC3F7"
+                        android:textAlignment="viewStart" />
+
+                    <RadioButton
+                        android:id="@+id/period4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#64B5F6"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:background="#4FC3F7"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="空调   00:00  ---  00:00     28 C"
+                        android:background="#64B5F6"
+                        android:textAlignment="viewStart" />
+
+                    <RadioButton
+                        android:id="@+id/period7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFB74D"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFD54F"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFB74D"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFD54F"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFB74D"
+                        android:textAlignment="viewStart" />
+                    <RadioButton
+                        android:id="@+id/period12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="地暖   00:00  ---  00:00     16 C"
+                        android:background="#FFD54F"
+                        android:textAlignment="viewStart" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

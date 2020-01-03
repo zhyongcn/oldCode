@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">九华暖通</string>
+    <string name="ssid_title">热点名称: </string>
+    <string name="bssid_title">热点MAC地址: </string>
+    <string name="password_title">密码: </string>
+    <string name="device_count_title">设备数量: </string>
+    <string name="package_broadcast">Broadcast</string>
+    <string name="package_multicast">Multicast</string>
+    <string name="confirm">确定</string>
+    <string name="wifi_5g_message">设备不支持5G Wifi,请确定连接的Wifi是2.4G</string>
+    <string name="location_disable_message">本地GPS无效</string>
+    <string name="version">九华Touch版本: %s</string>
+</resources>

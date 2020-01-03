@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/timer_set_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/timer_set_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="房间"
+            android:textColor="#FFFFFF"
+            android:background="#E65100"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/timer_set_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="星期"
+            android:textColor="#FFFFFF"
+            android:background="#E65100"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/timer_set_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="时段"
+            android:textColor="#FFFFFF"
+            android:background="#E65100"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/timer_set_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#FFFFFF"
+            android:background="#E65100"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/timer_set_room_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_set_top"
+        android:layout_above="@id/timer_set_upload"
+        android:layout_alignParentLeft="true"
+        android:background="#C3FFD54F"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/room1button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="客厅"
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/room2button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主卧"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room3button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room4button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room5button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room6button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room7button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/room8button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/timer_set_week_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timer_set_room_radio"
+        android:layout_above="@id/timer_set_upload"
+        android:layout_below="@id/timer_set_top"
+        android:background="#BFFFF176"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Mon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周一 "
+            android:layout_weight="1"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/Tue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周二 "
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/Wed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周三 "
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/Thu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周四 "
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/Fri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周五 "
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/Sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周六 "
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/Sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周日 "
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/timer_set_session_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timer_set_top"
+        android:layout_above="@id/timer_set_upload"
+        android:layout_toRightOf="@id/timer_set_week_radio"
+        android:background="#D2FFD54F"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="时段一" />
+
+        <RadioButton
+            android:id="@+id/befornoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时段二" />
+
+        <RadioButton
+            android:id="@+id/noon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时段三" />
+
+        <RadioButton
+            android:id="@+id/afternoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时段四" />
+
+        <RadioButton
+            android:id="@+id/evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时段五" />
+
+        <RadioButton
+            android:id="@+id/night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时段六" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/timer_set_setRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/timer_set_session_radio"
+        android:layout_above="@id/timer_set_upload"
+        android:layout_below="@id/timer_set_top"
+        android:layout_alignParentEnd="true"
+        android:background="#ABFFF176"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="开始时间"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:20"
+            android:textSize="24dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/set_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:textSize="@dimen/activity_vertical_margin"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:40"
+            android:layout_gravity="center"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/set_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设定温度"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_vertical_margin" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="18 C"
+            android:textSize="28dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/set_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/time_set_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改保存本条记录" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/timer_set_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#D8E65100"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:text="全部提交并上传服务器" />
+
+
+</RelativeLayout>
