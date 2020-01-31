@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements IGetMessageCallBa
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
+        //TODO 是不是用全局变量来存储数据，getapplication（）
         //从存储器中读取数据：各个房间的名字
         //这个放在开始的部分，利用线程，不耽误其他线程
         SharedPreferences sharedPreferences = getSharedPreferences("data", MODE_PRIVATE);
@@ -177,14 +178,6 @@ public class MainActivity extends AppCompatActivity implements IGetMessageCallBa
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE);
         startService(intent);
 
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room1","Room1feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room2","Room2feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room3","Room3feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room4","Room4feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room5","Room5feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room6","Room6feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room7","Room7feedback", 1, true);
-//        MQTTService.publish("86518/JYCFGC/6-2-3401/Room8","Room8feedback", 1, true);
     }
 
     //右上角的目录的设置
@@ -306,9 +299,10 @@ public class MainActivity extends AppCompatActivity implements IGetMessageCallBa
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-
+    protected void onStart() {
+        super.onStart();
+        //这里是不是应该实现查询反馈指令？ 这个时候activity还没有走到前台。
+        //因为两遍代码的原因，也可以不在这里实现。
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room1","Room1feedback", 1, true);
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room2","Room2feedback", 1, true);
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room3","Room3feedback", 1, true);
@@ -317,5 +311,25 @@ public class MainActivity extends AppCompatActivity implements IGetMessageCallBa
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room6","Room6feedback", 1, true);
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room7","Room7feedback", 1, true);
 //        MQTTService.publish("86518/JYCFGC/6-2-3401/Room8","Room8feedback", 1, true);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //应该在这里实现查询反馈指令。（最初onstart的时候也经过onResume）
+        //TODO 在全新启动的时候没有发布，是不是MQTTService 没有就绪。是不是应该在成功订阅“Room1” 的主题之后在做一次发布。
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room1","Room1feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room2","Room2feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room3","Room3feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room4","Room4feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room5","Room5feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room6","Room6feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room7","Room7feedback", 1, true);
+        MQTTService.publish("86518/JYCFGC/6-2-3401/Room8","Room8feedback", 1, true);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
     }
 }

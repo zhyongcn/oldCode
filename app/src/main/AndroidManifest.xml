@@ -11,8 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SetPeroidActivity"></activity>
-        <activity android:name=".ManualActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RepairActivity" />
-        <activity android:name=".UserinfoActivity" />
-        <activity android:name=".DocumentsAndRepairActivity" />
-        <activity android:name=".timerSettingActivity" />
-        <activity android:name=".OutdoorActivity" />
-        <activity android:name=".RoomActivity" />
+        <activity android:name=".SetPeroidActivity" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".RepairActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".UserinfoActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DocumentsAndRepairActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".timerSettingActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".OutdoorActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RoomActivity"  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ManualActivity" android:parentActivityName=".RoomActivity"/>
     </application>
 
 </manifest>
