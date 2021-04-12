@@ -1,0 +1,44 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.espressif.iot_esptouch_demo"
+4    android:versionCode="20"
+5    android:versionName="0.3.7.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="27" />
+9-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:5:5-67
+11-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:6:5-76
+12-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:7:5-79
+13-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+14-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:8:5-86
+14-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:8:22-83
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+15-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:9:5-76
+15-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:9:22-73
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:10:5-81
+16-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:10:22-78
+17
+18    <application android:allowBackup="true" >
+18-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:12:5-19:19
+18-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:13:9-35
+19        <activity
+19-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:14:9-18:20
+20            android:name="com.espressif.iot.esptouch.demo_activity.EsptouchDemoActivity"
+20-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:15:13-89
+21            android:screenOrientation="portrait" >
+21-->D:\Git\androidproject\jiuhuaheatpumpsystem\apptouch\src\main\AndroidManifest.xml:16:13-49
+22        </activity>
+23    </application>
+24
+25</manifest>

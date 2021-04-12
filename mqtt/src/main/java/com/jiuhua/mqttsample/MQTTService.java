@@ -33,7 +33,7 @@ public class MQTTService extends Service {
     private String userName = "admin";
     private String passWord = "password";
     private static String myTopic = "86518/JYCFGC/6-2-3401/HandT";      //要订阅的主题
-    private String clientId = "androidId-86518/JYCFGC/user2";//客户端标识
+    private String clientId = "androidId-86518/JYCFGC/user1";//客户端标识
     private IGetMessageCallBack IGetMessageCallBack;//将在什么地方使用？mqttcallback实例当中改写原来的方法
 
 

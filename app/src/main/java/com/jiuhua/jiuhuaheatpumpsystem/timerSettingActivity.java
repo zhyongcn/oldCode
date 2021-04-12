@@ -28,7 +28,7 @@ public class timerSettingActivity extends AppCompatActivity implements View.OnCl
         TimePicker.OnTimeChangedListener, NumberPicker.OnValueChangeListener {
 
     private MyServiceConnection serviceConnection;//连接实例
-    //private MQTTService mqttService;//服务实例
+    //private MQTTService mqttService;//服务实例，应该也可以不引入，直接使用MQTTService。
 
     /**
      * 定义一个三维数组代表8个房间。 一周7天。
